@@ -1,0 +1,18 @@
+# Site settings
+title: Angela Dyrda
+description: "iOS/Swift and Rails Developer"
+baseurl: ""
+url: "http://yourdomain.com"
+twitter_username: "adyrda2"
+github_username:  "adyrda2"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Pagination
+paginate: 5
+
+# Sass
+sass:
+    style: :compressed
