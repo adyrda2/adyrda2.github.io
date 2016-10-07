@@ -11,7 +11,7 @@ As developers we’ve been taught to commit our work a lot and often, but regard
 
 #### Scenario #1: You should have committed several times by now, but you forgot, got distracted, etc. 
 
-*git add --patch*
+*git add `--`patch*
 
 You can use this command to get diffs of your work in smaller patches, and by  pressing ‘y’ or ’n’ you can decide which of those snippets to stage. Once you get through all of the patches of code you want to add for your next commit, you can just commit as you normally would. Use the command over again as needed. 
 
@@ -19,7 +19,7 @@ You can use this command to get diffs of your work in smaller patches, and by  p
 
 Simply stage those changes and use the following command:
 
-*git commit --amend*
+*git commit `--`amend*
 
 
 
