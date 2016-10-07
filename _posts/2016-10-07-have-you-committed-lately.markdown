@@ -15,13 +15,18 @@ As developers we’ve been taught to commit our work a lot and often, but regard
 
 You can use this command to get diffs of your work in smaller patches, and by  pressing ‘y’ or ’n’ you can decide which of those snippets to stage. Once you get through all of the patches of code you want to add for your next commit, you can just commit as you normally would. Use the command over again as needed. 
 
-#### Scenario 2: You have some unstaged changes that really should have gone into your last commit. Simply stage those changes and use the following command.
+#### Scenario 2: You have some unstaged changes that really should have gone into your last commit. 
+
+Simply stage those changes and use the following command:
 
 *git commit --amend*
 
+
+
+
 Everything is easier when we commit as we go, but I find myself using these commands a lot and I hope you are able to find them useful.
 
-Additional references: 
+#### Additional references: 
 
 [git add --patch]("https://git-scm.com/docs/git-add")
 
