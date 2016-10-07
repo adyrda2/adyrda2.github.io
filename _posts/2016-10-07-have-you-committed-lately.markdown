@@ -28,6 +28,6 @@ Everything is easier when we commit as we go, but I find myself using these comm
 
 #### Additional references: 
 
-[git add --patch]("https://git-scm.com/docs/git-add")
+`[git add --patch]("https://git-scm.com/docs/git-add")`
 
-[git commit --amend]("https://help.github.com/articles/changing-a-commit-message/")
+`[git commit --amend]("https://help.github.com/articles/changing-a-commit-message/")`
