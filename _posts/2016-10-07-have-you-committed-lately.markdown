@@ -9,7 +9,7 @@ tags: git
 
 As developers we’ve been taught to commit our work a lot and often, but regardless of the circumstances that is not always the case. If you find yourself in that scenario there are some really awesome git features that could get your commits organized again. 
 
-#### Scenario #1: You should have committed several times by now, but you forgot, got distracted, etc. 
+#### Scenario 1: You should have committed several times by now, but you forgot, got distracted, etc. 
 
 `git add --patch`
 
