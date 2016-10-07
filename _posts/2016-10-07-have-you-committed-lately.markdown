@@ -22,5 +22,5 @@ git commit --amend
 Everything is easier when we commit as we go, but I find myself using these commands a lot and I hope you are able to find them useful.
 
 Additional references: 
-https://git-scm.com/docs/git-add
-https://help.github.com/articles/changing-a-commit-message/
+[](https://git-scm.com/docs/git-add)
+[](https://help.github.com/articles/changing-a-commit-message/)
