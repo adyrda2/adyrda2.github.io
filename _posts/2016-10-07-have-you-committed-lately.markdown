@@ -1,33 +1,44 @@
 ---
 layout: post
-title: Have you committed lately?
-date:   2016-10-07
-categories: Git
+title: Value vs Reference Types
+date:   2020-23-07
+categories: iOS, Swift
 location:
-tags: git
+tags: iOS, Swift
 ---
 
-As developers we’ve been taught to commit our work a lot and often, but sometimes that isn't the case. Here are a couple awesome git features that could help get your commits organized again.
+**Value Types** usually represented as a struct, enum, or tuple are types that keep a unique copy of its data.
+For example, let's create a `Home` struct, and create an instance of it below in a variable called `summerHome`. Next we assign that instance to another property called `floridaHome` and change it's `name` property. Notice the name property of `floridaHome` changes, but becuase it contains a unique copy of that instance, the `name` property of `summerHome` does not change.
 
-#### Scenario 1: You haven't committed in a while. 
+```
+struct Home {
+  var name: String
+}
 
-`git add --patch`
+var summerHome = Home(name: "Summer Home")
+var floridaHome = summerHome
+floridaHome.name = "Florida Home"
+floridaHome.name //"Florida Home"
+summerHome.name //"Summer Home"
+```
 
-You can use this command to get diffs of your work in smaller patches, and by  pressing ‘y’ or ’n’ you can decide which of those snippets to stage. Once you get through all of the patches of code you want to add for your next commit, you can just commit as you normally would. Use the command over again as needed. 
+**Reference types**, usually represented as a class on the otherhand, share a single copy of the data.
+The example below defines a `Person` class, and an instance of a person in a variable named `joe` has been created. When we assign this instance to another variable named `john` and change it's name property to `John`, the name property of `joe` also changes because they point to the same instance.
 
-#### Scenario 2: You have some unstaged changes that really should have gone into your last commit. 
+```
+class Person {
+  var name: String
+  var age: Int
+  
+  init(name: String, age: Int) {
+    self.name = name
+    self.age = age
+  }
+}
 
-Simply stage those changes and use the following command:
-
-`git commit --amend`
-
-
-
-
-Everything is easier when we commit as we go, but I find myself using these commands a lot and I hope you are able to find them useful.
-
-#### Additional references: 
-
-[`git add --patch`]("https://git-scm.com/docs/git-add")
-
-[`git commit --amend`]("https://help.github.com/articles/changing-a-commit-message/")
+var joe = Person(name: "Joe", age: 24)
+var john = joe
+john.name = "John"
+john.name //"John"
+joe.name //"John"
+```
