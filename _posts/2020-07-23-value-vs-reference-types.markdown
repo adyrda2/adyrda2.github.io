@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Value vs Reference Types
-date:   2020-23-07
+date: 2020-07-23
 categories: iOS, Swift
 location:
 tags: iOS, Swift
